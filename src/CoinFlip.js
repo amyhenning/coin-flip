@@ -48,9 +48,7 @@ class CoinFlip extends Component {
       <div className='CoinFlip'>
         <h1>Flip a coin!</h1>
         {this.state.currentCoin && <Coin coinInfo={this.state.currentCoin} />}
-        <div>
-          <button onClick={this.handleClick}>Flip the Coin!</button>
-        </div>
+        <button onClick={this.handleClick}>Flip the Coin!</button>
         <h3>The coin has been flipped {this.state.totalFlips} {this.pluralTime(this.state.totalFlips)}.
           It has landed on heads {this.state.totalHeads} {this.pluralTime(this.state.totalHeads)}.
           It has landed on tails {this.state.totalTails} {this.pluralTime(this.state.totalTails)}.
